@@ -1,0 +1,1 @@
+generate NEXTAUTH_SECRET using  command 'openssl rand -base64 32'  -  https://legacy.cryptool.org/en/cto/openssl
