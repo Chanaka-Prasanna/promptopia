@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Profile from '@components/Profile';
 import { useSearchParams } from 'next/navigation';
 import { capitalizeFirstLetter } from '@utils/other';
@@ -27,11 +27,13 @@ const UserProfile = ({ params }) => {
   }, []);
 
   return (
-    <Profile
-      name={`${capitalizeFirstLetter(name.split('_')[0])}'s`}
-      desc="Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination"
-      data={userPosts}
-    />
+    <Suspense>
+      <Profile
+        name={`${capitalizeFirstLetter(name.split('_')[0])}'s`}
+        desc="Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination"
+        data={userPosts}
+      />
+    </Suspense>
   );
 };
 
