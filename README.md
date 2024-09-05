@@ -16,7 +16,7 @@ Promptopia is a full-stack web application designed to help users share their pr
 ## Technologies Used
 
 - **Frontend**: Next.js
-- **Backend**: Node.js, Express
+- **Backend**: Serverless architecture using Next.js
 - **Database**: MongoDB with Mongoose for data management
 - **Authentication**: Google OAuth (via NextAuth.js)
 
@@ -24,5 +24,5 @@ Promptopia is a full-stack web application designed to help users share their pr
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Chanaka-Prasanna/promptopia.git
    ```
