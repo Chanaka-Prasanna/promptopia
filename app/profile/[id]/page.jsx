@@ -29,7 +29,9 @@ const UserProfile = ({ params }) => {
   return (
     <Profile
       name={`${capitalizeFirstLetter(name.split('_')[0])}'s`}
-      desc="Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination"
+      desc={`Welcome to ${capitalizeFirstLetter(
+        name.split('_')[0],
+      )}'s profile page. Use these prompts as a starting point and customize them to fuel your own creativity!`}
       data={userPosts}
     />
   );
